@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my love❤️</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Экран блокировки -->
+    <div id="lock-screen" class="screen active">
+        <div class="big-heart">&#10084;</div>
+        <div class="lock-screen-content">
+            <div class="time-display">
+                <span id="time">00:00</span>
+            </div>
+            <div class="date-display">
+                <span id="date">Суббота, 1 марта</span>
+            </div>
+            <div class="pin-container">
+                <div class="pin-dots">
+                    <div class="pin-dot"></div>
+                    <div class="pin-dot"></div>
+                    <div class="pin-dot"></div>
+                    <div class="pin-dot"></div>
+                </div>
+                <div class="pin-pad">
+                    <div class="pin-row">
+                        <button class="pin-button" data-num="1">1</button>
+                        <button class="pin-button" data-num="2">2</button>
+                        <button class="pin-button" data-num="3">3</button>
+                    </div>
+                    <div class="pin-row">
+                        <button class="pin-button" data-num="4">4</button>
+                        <button class="pin-button" data-num="5">5</button>
+                        <button class="pin-button" data-num="6">6</button>
+                    </div>
+                    <div class="pin-row">
+                        <button class="pin-button" data-num="7">7</button>
+                        <button class="pin-button" data-num="8">8</button>
+                        <button class="pin-button" data-num="9">9</button>
+                    </div>
+                    <div class="pin-row">
+                        <button class="pin-button pin-button-clear">C</button>
+                        <button class="pin-button" data-num="0">0</button>
+                        <button class="pin-button pin-button-enter"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-hearts"></div>
+    </div>
+
+    <!-- Домашний экран -->
+    <div id="home-screen" class="screen">
+        <div class="status-bar">
+            <span id="home-time">00:00</span>
+            <div class="status-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        <div class="app-grid">
+            <div class="app" data-app="reasons">
+                <div class="app-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="app-label">причины</div>
+            </div>
+            <div class="app" data-app="photos">
+                <div class="app-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="app-label">фото</div>
+            </div>
+            <div class="app" data-app="mail">
+                <div class="app-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="app-label">почта</div>
+            </div>
+            <div class="app" data-app="locked" id="locked-app">
+                <div class="app-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="app-label">закрыто</div>
+            </div>
+        </div>
+        <div class="dock">
+            <div class="dock-app">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="dock-app">
+                <i class="fas fa-comment"></i>
+            </div>
+            <div class="dock-app">
+                <i class="fas fa-camera"></i>
+            </div>
+            <div class="dock-app">
+                <i class="fas fa-music"></i>
+            </div>
+        </div>
+        <div class="floating-hearts"></div>
+    </div>
+
+    <!-- Приложение "Причины" -->
+    <div id="reasons-app" class="screen app-screen">
+        <div class="app-header">
+            <button class="back-button"><i class="fas fa-chevron-left"></i></button>
+            <h1>причины</h1>
+            <button class="options-button"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <div class="reasons-content">
+            <div class="note">
+                <h2>причины</h2>
+                <ul class="reasons-list">
+                    <li><i class="fas fa-heart"></i> твое присутствие рядом вызывает у меня улыбку</li>
+                    <li><i class="fas fa-heart"></i> ты заботишься обо мне как никто другой</li>
+                    <li><i class="fas fa-heart"></i> с тобой я могу быть собой</li>
+                    <li><i class="fas fa-heart"></i> ты поддерживаешь меня в любой ситуации</li>
+                    <li><i class="fas fa-heart"></i> ты понимаешь меня без слов</li>
+                    <li><i class="fas fa-heart"></i> ты принимаешь меня таким какой я есть</li>
+                    <li><i class="fas fa-heart"></i> ты неописуема красива</li>
+                    <li><i class="fas fa-heart"></i> твоя пухлость делает тебя милой</li>
+                    <li><i class="fas fa-heart"></i> у тебя красивые волосы</li>
+                    <li><i class="fas fa-heart"></i> ты показала мне что такое любовь</li>
+                </ul>
+            </div>
+        </div>
+        <div class="floating-hearts"></div>
+    </div>
+
+    <!-- Приложение "Фото" -->
+    <div id="photos-app" class="screen app-screen">
+        <div class="app-header">
+            <button class="back-button"><i class="fas fa-chevron-left"></i></button>
+            <h1>фото</h1>
+            <button class="options-button"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <div class="photos-content">
+            <div class="photo-grid">
+                <div class="photo-item" data-photo="1">
+                    <div class="photo-thumbnail">
+                        <img src="images/photo_2025-03-01_09-13-39.jpg" alt="Фото 1">
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="2">
+                    <div class="photo-thumbnail">
+                        <img src="images/photo_2025-03-01_09-21-46.jpg" alt="Фото 2">
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="3">
+                    <div class="photo-thumbnail">
+                        <img src="images/photo_2025-03-01_09-21-58.jpg" alt="Фото 3">
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="4">
+                    <div class="photo-thumbnail">
+                        <img src="images/photo_2025-03-01_09-22-05.jpg" alt="Фото 4">
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="5">
+                    <div class="photo-thumbnail">
+                        <img src="images/photo_2025-03-01_09-22-08.jpg" alt="Фото 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Просмотр фото на полный экран -->
+    <div id="photo-view" class="screen">
+        <div class="photo-view-header">
+            <button class="back-button"><i class="fas fa-chevron-left"></i></button>
+            <h1>Фото</h1>
+            <button class="options-button"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <div class="photo-view-content">
+            <div class="full-photo">
+                <img id="full-photo-img" src="/api/placeholder/300/300" alt="Фото на полный экран">
+            </div>
+            <div class="photo-description">
+                <p id="photo-description-text">Описание фото появится здесь</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Приложение "Почта" -->
+    <div id="mail-app" class="screen app-screen">
+        <div class="app-header">
+            <button class="back-button"><i class="fas fa-chevron-left"></i></button>
+            <h1>Почта</h1>
+            <button class="options-button"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <div class="mail-content">
+            <div class="mail-search">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Поиск в почте">
+                </div>
+            </div>
+            <div class="mail-list">
+                <div class="mail-item unread" data-mail="1">
+                    <div class="mail-sender">
+                        <img src="" alt="Егор" class="sender-avatar">
+                        <span class="sender-name">Егор</span>
+                    </div>
+                    <div class="mail-preview">
+                        <div class="mail-subject">Я хочу тебе сказать...</div>
+                        <div class="mail-snippet">Открой это сообщение, у меня для тебя кое-что есть...</div>
+                    </div>
+                    <div class="mail-time">09:45</div>
+                </div>
+                <div class="mail-item unread" data-mail="2">
+                    <div class="mail-sender">
+                        <img src="/api/placeholder/40/40" alt="Егор" class="sender-avatar">
+                        <span class="sender-name">Егор</span>
+                    </div>
+                    <div class="mail-preview">
+                        <div class="mail-subject">Еще одно признание</div>
+                        <div class="mail-snippet">Хочу признаться тебе еще в одном...</div>
+                    </div>
+                    <div class="mail-time">08:30</div>
+                </div>
+                <div class="mail-item unread" data-mail="3">
+                    <div class="mail-sender">
+                        <img src="/api/placeholder/40/40" alt="Егор" class="sender-avatar">
+                        <span class="sender-name">Егор</span>
+                    </div>
+                    <div class="mail-preview">
+                        <div class="mail-subject">Важное сообщение</div>
+                        <div class="mail-snippet">У меня есть очень важное сообщение для тебя...</div>
+                    </div>
+                    <div class="mail-time">Вчера</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Просмотр письма -->
+    <div id="mail-view" class="screen">
+        <div class="app-header">
+            <button class="back-button"><i class="fas fa-chevron-left"></i></button>
+            <h1>Сообщение</h1>
+            <button class="options-button"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <div class="mail-view-content">
+            <div class="mail-header">
+                <div class="mail-subject-full" id="mail-subject-full">Тема письма</div>
+                <div class="mail-sender-full">
+                    <img src="/api/placeholder/40/40" alt="Егор" class="sender-avatar">
+                    <div class="sender-details">
+                        <div class="sender-name-full">Егор</div>
+                        <div class="sender-email">egor@email.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mail-body">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-front">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="mail-message" id="mail-message">
+                    <!-- Содержимое сообщения будет добавлено через JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Приложение "Закрыто/Открыто" -->
+    <div id="locked-app-screen" class="screen app-screen">
+        <div class="app-header">
+            <button class="back-button"><i class="fas fa-chevron-left"></i></button>
+            <h1 id="locked-app-title">закрыто</h1>
+            <button class="options-button"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <div class="locked-content" id="locked-content">
+            <div class="locked-message">
+                <i class="fas fa-lock locked-icon"></i>
+                <p>откроется когда посмотришь другие^^</p>
+            </div>
+        </div>
+        <div class="unlocked-content" id="unlocked-content">
+            <div class="flower-animation"></div>
+            <div class="final-message">
+                <h2>люблю тебя милая моя</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
